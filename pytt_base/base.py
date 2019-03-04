@@ -9,6 +9,7 @@ from pywe_xml import dict_to_xml
 class BaseToutiao(object):
     def __init__(self):
         self.DEVELOPER_DOMAIN = 'https://developer.toutiao.com'
+        self.TPPAY_DOMAIN = 'https://tp-pay.snssdk.com'
 
     def geturl(self, url, **kwargs):
         return url.format(**kwargs)
